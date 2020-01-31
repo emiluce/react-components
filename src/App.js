@@ -1,33 +1,42 @@
 import React from 'react';
-import Contact from "./components/Contact"
+import ContactList from "./components/ContactList"
 
 function App() {
   const users = [{
     id: 1,
-    name: "Riccardo",
+    name: "Emanuela",
     online: false,
     avatar: "https://i.pinimg.com/originals/5c/06/68/5c0668716bad0772cd6e64e300477300.jpg"
   },
   {
     id: 2,
-    name: "Riccarda",
+    name: "Alice",
     online: false,
     avatar: "https://i.pinimg.com/originals/5c/06/68/5c0668716bad0772cd6e64e300477300.jpg"
   },
   {
     id: 3,
-    name: "Riccardi",
+    name: "Marta",
     online: false,
+    avatar: "https://i.pinimg.com/originals/5c/06/68/5c0668716bad0772cd6e64e300477300.jpg"
+  },
+  {
+    id: 4,
+    name: "Yaser",
+    online: false,
+    avatar: "https://i.pinimg.com/originals/5c/06/68/5c0668716bad0772cd6e64e300477300.jpg"
+  },
+  {
+    id: 5,
+    name: "Danya",
+    online: false, c
     avatar: "https://i.pinimg.com/originals/5c/06/68/5c0668716bad0772cd6e64e300477300.jpg"
   }
   ];
 
   return (
     <div className="App">
-      {users.map(user => (
-        <Contact
-          name={user.name} online={user.online} avatar={user.avatar} />
-      ))}
+      <ContactList users={users} />
     </div>
   );
 }
