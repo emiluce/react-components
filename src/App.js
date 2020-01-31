@@ -29,7 +29,7 @@ function App() {
   {
     id: 5,
     name: "Danya",
-    online: false, c
+    online: false,
     avatar: "https://i.pinimg.com/originals/5c/06/68/5c0668716bad0772cd6e64e300477300.jpg"
   }
   ];
