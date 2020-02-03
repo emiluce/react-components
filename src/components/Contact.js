@@ -14,7 +14,7 @@ class Contact extends React.Component {
 
   changeStatus = e => {
     e.preventDeafault();
-    this.setState({ online: !this.StaticRange.online });
+    this.setState({ online: !this.state.online });
   };
 
   render() {
