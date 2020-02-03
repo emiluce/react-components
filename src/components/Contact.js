@@ -13,7 +13,7 @@ class Contact extends React.Component {
 
 
   changeStatus = e => {
-    e.preventDeafault();
+    e.preventDefault();
     this.setState({ online: !this.state.online });
   };
 
